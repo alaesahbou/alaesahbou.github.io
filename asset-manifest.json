@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/static/css/main.06e5434a.chunk.css",
+    "main.js": "/static/js/main.4ea127e0.chunk.js",
+    "main.js.map": "/static/js/main.4ea127e0.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.18401a80.js",
+    "runtime-main.js.map": "/static/js/runtime-main.18401a80.js.map",
+    "static/js/2.0ed4f71f.chunk.js": "/static/js/2.0ed4f71f.chunk.js",
+    "static/js/2.0ed4f71f.chunk.js.map": "/static/js/2.0ed4f71f.chunk.js.map",
+    "static/css/3.df879eac.chunk.css": "/static/css/3.df879eac.chunk.css",
+    "static/js/3.3f348802.chunk.js": "/static/js/3.3f348802.chunk.js",
+    "static/js/3.3f348802.chunk.js.map": "/static/js/3.3f348802.chunk.js.map",
+    "static/css/4.e91a4b36.chunk.css": "/static/css/4.e91a4b36.chunk.css",
+    "static/js/4.8c801c46.chunk.js": "/static/js/4.8c801c46.chunk.js",
+    "static/js/4.8c801c46.chunk.js.map": "/static/js/4.8c801c46.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.154615188cbbbd52d6bdb99805eded71.js": "/precache-manifest.154615188cbbbd52d6bdb99805eded71.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/3.df879eac.chunk.css.map": "/static/css/3.df879eac.chunk.css.map",
+    "static/css/4.e91a4b36.chunk.css.map": "/static/css/4.e91a4b36.chunk.css.map",
+    "static/css/main.06e5434a.chunk.css.map": "/static/css/main.06e5434a.chunk.css.map",
+    "static/js/2.0ed4f71f.chunk.js.LICENSE.txt": "/static/js/2.0ed4f71f.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/static/media/Montserrat-Regular.ee653992.ttf",
+    "static/media/Upwork-logo.png": "/static/media/Upwork-logo.9b66bc76.png",
+    "static/media/bdline.png": "/static/media/bdline.1ef1e240.png",
+    "static/media/bp.png": "/static/media/bp.9a99b05b.png",
+    "static/media/cleardrobe.png": "/static/media/cleardrobe.52b39d27.png",
+    "static/media/contactMailDark.svg": "/static/media/contactMailDark.51cf7192.svg",
+    "static/media/developerActivity.svg": "/static/media/developerActivity.59389695.svg",
+    "static/media/fstm.png": "/static/media/fstm.38593a54.png",
+    "static/media/inra.png": "/static/media/inra.892bbd51.png",
+    "static/media/manOnTable.svg": "/static/media/manOnTable.52be3144.svg",
+    "static/media/pro-sys.png": "/static/media/pro-sys.2e0b6fa9.png",
+    "static/media/skill.svg": "/static/media/skill.34409398.svg",
+    "static/media/TalkCard.scss": "/static/media/talksCardBack.13780cdd.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.18401a80.js",
+    "static/js/2.0ed4f71f.chunk.js",
+    "static/css/main.06e5434a.chunk.css",
+    "static/js/main.4ea127e0.chunk.js"
+  ]
+}
