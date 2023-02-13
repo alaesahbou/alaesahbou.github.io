@@ -555,12 +555,14 @@ h5, .h5{font-size: 20px; line-height: 24px; color: #333; font-weight: 400; font-
     background-color: #0b206a;
     display: table;
     border: 2px solid #09b3f2!important;
-    margin: 0 auto;
+    margin: 0 0;
     transition: .5s ease-in-out;
     overflow: hidden; margin-bottom: 20px}
 .img_box figure{display: table-cell; vertical-align: middle; text-align: center}
 .img_box img{width: 64px; height: 64px}
-.hosting_feature_box{padding: 0 13px}
+.hosting_feature_box{padding: 50px 50px;}
+.hosting_feature_box:hover{background-color: white; border-radius: 10px}
+.hosting_feature_box:hover h5, .hosting_feature_box:hover p {color: black}
 
 
 
