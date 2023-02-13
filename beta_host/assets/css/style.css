@@ -538,10 +538,11 @@ h4, .h4{font-size: 24px; line-height: 32px; color: #132b7e; font-weight: 400; fo
 ====================================== */
 .section_heading_box  p{position: relative; margin-bottom: 60px; font-size: 16px; margin-top: 10px}
 .section_heading_box  p:before{position: absolute; content: ""; background-color: #13ceed; width: 10%; height: 5px; bottom: -20px; left: 0; right: 0; margin: 0 auto; border-radius: 32px}
-.hosting_guarantee_box figure img{width: 82px; height: 82px}
+.hosting_guarantee_box figure img{width: 65px; height: 65px;}
 h5, .h5{font-size: 20px; line-height: 24px; color: #333; font-weight: 400; font-family: 'Lato', sans-serif}
-.hosting_guarantee_box figure{margin-bottom: 20px}
+.hosting_guarantee_box figure{margin: 0px 0px 20px 20px}
 .hosting_guarantee_box h5{margin-bottom: 10px}
+.hosting_guarantee_box_main {margin: 100px 10px;}
 
 
 /* ===================================
