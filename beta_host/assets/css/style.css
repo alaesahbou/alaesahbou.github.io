@@ -512,7 +512,7 @@ a.logo_link{padding-left: 0 !important;}
 /* ===================================
       Hosting Plans Section
 ====================================== */
-.hosting_plan_box{background-color: #fff; padding: 40px 15px; box-shadow: 0 0 10px rgba(0,0,0,.10); border-radius: 10px; transition: all ease-in-out 0.5s}
+.hosting_plan_box{background-color: #fff; padding: 40px 15px; box-shadow: 0 0 10px rgba(0,0,0,.10); border-radius: 10px; transition: all ease-in-out 0.5s; z-index: 10; position: relative;}
 h4, .h4{font-size: 24px; line-height: 32px; color: #132b7e; font-weight: 400; font-family: 'Lato', sans-serif}
 .hosting_plan_box h4{position: relative; margin-bottom: 30px}
 .hosting_plan_box h4:before{position: absolute; content: ""; background-color: #029ef5; width: 50%; height: 2px; left: 0; right: 0; margin: 0 auto; bottom: -12px}
@@ -531,6 +531,7 @@ h4, .h4{font-size: 24px; line-height: 32px; color: #132b7e; font-weight: 400; fo
   content: "\2713"; /* Unicode character for check mark */
   padding-right: 5px; /* Space between check mark and text */
 }
+.hecta-icon{ position: absolute; z-index: 1; left: 9%; padding-top: 120px }
 
 
 /* ===================================
