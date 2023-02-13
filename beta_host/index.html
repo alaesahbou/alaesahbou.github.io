@@ -481,5 +481,24 @@
         });
 
     </script>
+	    <script>
+function deferJavaScripts() {
+  var scripts = [].slice.call(document.querySelectorAll('script[src]'));
+  var srcs = scripts.map(function(script) { return script.src; });
+  scripts.forEach(function(script) {
+    var newScript = document.createElement('script');
+    newScript.src = script.src;
+    newScript.async = false;
+    script.parentNode.insertBefore(newScript, script.nextSibling);
+    script.parentNode.removeChild(script);
+  });
+}
+if (window.addEventListener) {
+  window.addEventListener('load', deferJavaScripts, false);
+} else if (window.attachEvent) {
+  window.attachEvent('onload', deferJavaScripts);
+}
+</script>
+
     </body>
 </html>
