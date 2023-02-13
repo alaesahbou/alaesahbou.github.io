@@ -146,6 +146,7 @@ h2, .h2{font-size: 32px; line-height: 42px; font-family: 'Lato', sans-serif}
     padding
 ====================================== */
 .section_padding{padding: 100px 0}
+.section_cpanel_padding{padding-top: 100px; padding-bottom: 175px}
 /*padding*/
 .no_padding{padding: 0}
 .padding_tb_40  {padding: 35px 25px}
@@ -586,7 +587,7 @@ h5, .h5{font-size: 20px; line-height: 24px; color: #333; font-weight: 400; font-
 .optimized_server_box_small p{color: grey; font-size: 14px}
 .optimized_server_box_small .img_box{margin: 0 auto; background-color: transparent; border: none;}
 .optimized_server_box_small img{ margin-bottom: 15px}
-.cpanel img{max-width: 100%;}
+.cpanel {max-width: 90%;  position: absolute; z-index: 9999; right: 0}
 
 
 
