@@ -39,50 +39,8 @@ body{color:#777; font-size: 14px; line-height: 24px; font-weight: 400; font-fami
     -webkit-text-stroke: 0.45px rgba(0, 0, 0, 0.1);
     -webkit-text-size-adjust: 100%;}
 
+.navbar {margin-bottom: 0}
 ul{margin: 0; padding: 0; list-style-type:none}
-.navbar {
-   padding: 10px;
- }
-
- .bbhd-logo {
-    padding-right: 7%;
- }
-
-.navbar ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: space-between;
- }
-
-#header.scrolled {
-  background: #0F094B;
-}
-
-#header {
-    height: 8vh;
-}
-
-.navbar ul li {
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  padding: 27px 20px;
- }
- 
-.navbar ul li a{
-  color: white;
-  font-family: 'Open Sans', sans-serif;
- }
-
- #header .row {
-    margin-top: -3vh;
- }
-
-.navbar ul li a:hover{
-  color: #13CEED;
- }
-
 a:hover{text-decoration: none}
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{margin: 0}
 p{margin-bottom: 0;}
@@ -198,14 +156,14 @@ h2, .h2{font-size: 32px; line-height: 42px; font-family: 'Lato', sans-serif}
 .padding_top_8  {padding-top: 8px}
 .padding_top_10 {padding-top: 10px}
 .padding_top_13 {padding-top: 13px}
-.padding_top_15	{padding-top: 15px}
+.padding_top_15 {padding-top: 15px}
 .padding_top_20 {padding-top: 20px}
 .padding_top_21 {padding-top: 21px}
 .padding_top_25 {padding-top: 25px}
 .padding_top_30 {padding-top: 30px}
 .padding_top_35 {padding-top: 35px}
 .padding_top_40 {padding-top: 40px}
-.padding_top_45	{padding-top: 45px}
+.padding_top_45 {padding-top: 45px}
 .padding_top_50 {padding-top: 50px}
 .padding_top_60 {padding-top: 60px}
 .padding_top_70 {padding-top: 70px}
@@ -225,9 +183,9 @@ h2, .h2{font-size: 32px; line-height: 42px; font-family: 'Lato', sans-serif}
 /*padding bottom*/
 .padding_bottom_5   {padding-bottom: 5px}
 .padding_bottom_8   {padding-bottom: 8px}
-.padding_bottom_10	{padding-bottom: 10px}
+.padding_bottom_10  {padding-bottom: 10px}
 .padding_bottom_13  {padding-bottom: 13px}
-.padding_bottom_15	{padding-bottom: 15px}
+.padding_bottom_15  {padding-bottom: 15px}
 .padding_bottom_17  {padding-bottom: 17px}
 .padding_bottom_20  {padding-bottom: 20px}
 .padding_bottom_21  {padding-bottom: 21px}
@@ -236,7 +194,7 @@ h2, .h2{font-size: 32px; line-height: 42px; font-family: 'Lato', sans-serif}
 .padding_bottom_35  {padding-bottom: 35px}
 .padding_bottom_40  {padding-bottom: 40px}
 .padding_bottom_50  {padding-bottom: 50px}
-.padding_bottom_45	{padding-bottom: 45px}
+.padding_bottom_45  {padding-bottom: 45px}
 .padding_bottom_55  {padding-bottom: 55px}
 .padding_bottom_60  {padding-bottom: 60px}
 .padding_bottom_65  {padding-bottom: 65px}
@@ -258,7 +216,7 @@ h2, .h2{font-size: 32px; line-height: 42px; font-family: 'Lato', sans-serif}
 .padding_left_15    {padding-left: 15px}
 .padding_left_20    {padding-left: 20px}
 .padding_left_25    {padding-left: 25px}
-.padding_left_30	{padding-left: 30px}
+.padding_left_30    {padding-left: 30px}
 .padding_left_40    {padding-left: 40px}
 .padding_left_50    {padding-left: 50px}
 .padding_left_55    {padding-left: 55px}
@@ -276,7 +234,7 @@ h2, .h2{font-size: 32px; line-height: 42px; font-family: 'Lato', sans-serif}
 .padding_right_10   {padding-right: 10px}
 .padding_right_15   {padding-right: 15px}
 .padding_right_20   {padding-right: 20px}
-.padding_right_30	{padding-right: 30px}
+.padding_right_30   {padding-right: 30px}
 .padding_right_40   {padding-right: 40px}
 .padding_right_50   {padding-right: 50px}
 .padding_right_55   {padding-right: 55px}
@@ -365,6 +323,7 @@ h2, .h2{font-size: 32px; line-height: 42px; font-family: 'Lato', sans-serif}
 .footer_links_list li a:hover{color: #029ef5}
 .footer_social_links li a i:hover{color: #029ef5}
 .hosting_plan_box:hover .shared_hosting_list li{color: #fff}
+.hosting_plan_box:hover .hosting_plan_list li{color: #fff}
 .btn_get_started:hover{background-color: #13ceed; border: 2px solid #13ceed; color: #fff}
 .solution_box:hover .solution_box_btn{background-color: #13ceed; border: 2px solid #13ceed; color: #fff}
 .dedicate_server_table tbody tr:hover .dedicated_server_btn{background-color: #13ceed; border: 2px solid #13ceed; color: #fff}
@@ -393,7 +352,7 @@ h2, .h2{font-size: 32px; line-height: 42px; font-family: 'Lato', sans-serif}
 
 
 a.default_logo img{width: 120px}
-div#header {position: fixed;width: 100%; z-index: 9}
+div#header {position: absolute;width: 100%; z-index: 9}
 .default_navigation .menu_navigation_list > li > a{font-size: 16px; line-height: 24px; color: #fff; font-weight: 400; font-family: 'Lati', sans-serif; padding: 10px 20px !important;}
 .navigation_social_icon li{display: inline-block}
 .navigation_social_icon li a i{font-size: 14px; color: rgba(255,255,255,.50); padding: 0 5px}
@@ -523,14 +482,14 @@ a.logo_link{padding-left: 0 !important;}
 /* ===================================
           Search Domain Section
 ====================================== */
-.search_box{background-color: #fff; border-radius: 25px; padding: 40px; margin-top: -155px; box-shadow: 0 0 10px rgba(0,0,0,.10)}
+.search_box{background-color: #fff; border-radius: 10px; padding: 40px; margin-top: -155px; box-shadow: 0 0 10px rgba(0,0,0,.10)}
 .search_box p, .plan_box p{font-size: 18px; line-height: 32px; margin-bottom: 50px}
 .search_area {width: 100%;position: relative}
 .text_field {
-    width: 100%;
+    width: 75%;
     font-size: 16px;
-    line-height: 36px;
-    height: 64px;
+    line-height: 20px;
+    height: 48px;
     padding: 0 20px;
     box-shadow: 0 0 5px 0 rgba(0,0,0,.0);
     border: 3px solid #d5d5d5;
@@ -539,16 +498,15 @@ a.logo_link{padding-left: 0 !important;}
     color: #777;
     border-radius: 40px;
     margin: 0 auto;
-    float: none;
+    float: left;
 }
-.btn_submit{position: absolute; top: 7px; right: 23px}
 .search_btn{background-color: #13ceed; color: #fff; font-size: 14px; line-height: 20px; border-radius: 32px; padding: 14px 50px; border: none; letter-spacing: 2px; transition: all ease-in-out 0.5s}
 .search_btn:focus, .text_field:focus{outline: none}
 .popular_domains_list{margin-top: 30px}
 .popular_domains_list li{display: inline-block; padding: 0 10px; border-right: 1px solid #cfd4dc}
 .popular_domains_list li:last-child{border-right: none}
 .popular_domains_list li figure, .popular_domains_list li .domain_price{display: inline-block}
-.domain_price{font-size: 18px; line-height: 18px; font-weight: 600; color: #132b7e}
+.domain_price{font-size: 16px; line-height: 18px; color: #000}
 
 
 /* ===================================
@@ -559,20 +517,36 @@ h4, .h4{font-size: 24px; line-height: 32px; color: #132b7e; font-weight: 400; fo
 .hosting_plan_box h4{position: relative; margin-bottom: 30px}
 .hosting_plan_box h4:before{position: absolute; content: ""; background-color: #029ef5; width: 50%; height: 2px; left: 0; right: 0; margin: 0 auto; bottom: -12px}
 .hosting_plan_box p{font-size: 14px; line-height: 24px; margin-bottom: 10px}
-.hosting_plan_price{font-size: 50px; line-height: 60px; color: #029ef5; margin-bottom: 5px; font-family: 'Lato', sans-serif}
+.hosting_plan_price{font-size: 50px; line-height: 60px; color: #fd6601; margin-bottom: 5px; font-family: 'Lato', sans-serif}
 .hosting_plan_price small{font-size: 30px; line-height: 60px}
-.shared_hosting_list{margin-bottom: 20px}
-.shared_hosting_list li{font-size: 14px; line-height: 36px}
+/*.shared_hosting_list{margin-bottom: 20px}
+.shared_hosting_list li{font-size: 14px; line-height: 36px}*/
+.shared_hosting_list, .hosting_plan_list{margin-bottom: 20px; width: 90%; margin-left: 5%;}
+.shared_hosting_list li{font-size: 14px; line-height: 36px; text-align: left; border-bottom: 1px solid grey;}
+.hosting_plan_list li{font-size: 13px; line-height: 36px; text-align: left; border-bottom: 1px solid grey;}
+.shared_hosting_list li:last-child, .hosting_plan_list li:last-child {
+  border-bottom: none;
+}
+.shared_hosting_list li::before, .hosting_plan_list li::before {
+  content: "\2713"; /* Unicode character for check mark */
+  padding-right: 5px; /* Space between check mark and text */
+}
+
 
 /* ===================================
       Hosting Guarantee Section
 ====================================== */
 .section_heading_box  p{position: relative; margin-bottom: 60px; font-size: 16px; margin-top: 10px}
 .section_heading_box  p:before{position: absolute; content: ""; background-color: #13ceed; width: 10%; height: 5px; bottom: -20px; left: 0; right: 0; margin: 0 auto; border-radius: 32px}
-.hosting_guarantee_box figure img{width: 82px; height: 82px}
+.hosting_guarantee_box figure img{width: 65px; height: 65px;}
 h5, .h5{font-size: 20px; line-height: 24px; color: #333; font-weight: 400; font-family: 'Lato', sans-serif}
-.hosting_guarantee_box figure{margin-bottom: 20px}
+.hosting_guarantee_box figure{margin: 0px 0px 20px 20px}
 .hosting_guarantee_box h5{margin-bottom: 10px}
+.hosting_guarantee_box_main {margin: 100px 10px;}
+.section_heading_box_ext  h1{position: relative; text-align: left; font-weight: bold; font-size: 50px}
+.section_heading_box_ext  h1:before{position: absolute; content: ""; background-color: #13ceed; width: 25%; height: 4px; bottom: -20px; left: 0; right: 0; margin: 0 0; }
+.section_heading_box_ext h5{margin: 50px 0px; color: #333; text-align: left; font-size: 20px; line-height: 30px; font-weight: 200;}
+.section_heading_box_ext .banner_btn {color: #000; position: absolute; left: 0}
 
 
 /* ===================================
@@ -585,12 +559,27 @@ h5, .h5{font-size: 20px; line-height: 24px; color: #333; font-weight: 400; font-
     background-color: #0b206a;
     display: table;
     border: 2px solid #09b3f2!important;
-    margin: 0 auto;
+    margin: 0 0;
     transition: .5s ease-in-out;
     overflow: hidden; margin-bottom: 20px}
 .img_box figure{display: table-cell; vertical-align: middle; text-align: center}
 .img_box img{width: 64px; height: 64px}
-.hosting_feature_box{padding: 0 13px}
+.hosting_feature_box{padding: 50px 50px;}
+.hosting_feature_box:hover{background-color: white; border-radius: 10px}
+.hosting_feature_box:hover h5, .hosting_feature_box:hover p {color: black}
+
+.optimized_server_box{padding: 50px 50px; background-color: white; border-radius: 10px; height: 500px}
+.optimized_server_box:hover{}
+.optimized_server_box h5{color: black; font-size: 16px; padding-bottom: 10px;}
+.optimized_server_box p{color: grey; font-size: 14px}
+
+.optimized_server_box_small{padding: 20px 20px; background-color: white; border-radius: 10px; height: 250px; margin-bottom: 10px}
+.optimized_server_box:hover, .optimized_server_box_small:hover{box-shadow: 0px 0px 5px 0px rgba(128, 128, 128, 0.3);}
+.optimized_server_box_small h5{color: black; font-size: 16px; padding-bottom: 5px;}
+.optimized_server_box_small p{color: grey; font-size: 14px}
+.optimized_server_box_small .img_box{margin: 0 auto; background-color: transparent; border: none;}
+.optimized_server_box_small img{ margin-bottom: 15px}
+
 
 
 
