@@ -30,7 +30,7 @@
                     <a href="#" class="banner_btn">Get Started Now</a>
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-6 text-right padding_top_120">
-                    <figure><img src="assets/images/hostiko27_animate_banner.svg" alt="" class="img-fluid"></figure>
+                    <figure><img src="assets/images/hostiko27_animate_banner.svg" alt="" class="img-fluid" id="anim_banner" ></figure>
                 </div>
             </div>
         </div>
@@ -483,6 +483,8 @@
 
   if (screenWidth < 992) {
     var image = document.getElementById("cpanel");
+    image.parentNode.removeChild(image);
+    var image = document.getElementById("anim_banner");
     image.parentNode.removeChild(image);
   }
 </script>
