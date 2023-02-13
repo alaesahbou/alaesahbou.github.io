@@ -548,6 +548,13 @@ h5, .h5{font-size: 20px; line-height: 24px; color: #333; font-weight: 400; font-
 .section_heading_box_ext h5{margin: 50px 0px; color: #333; text-align: left; font-size: 20px; line-height: 30px; font-weight: 200;}
 .section_heading_box_ext .banner_btn {color: #000; position: absolute; left: 0}
 
+.section_heading_box_features  h1{position: relative; text-align: left; font-weight: bold;}
+.section_heading_box_features  p{position: relative; text-align: left; font-weight: bold;}
+.section_heading_box_features  p:before{position: absolute; content: ""; background-color: #13ceed; width: 25%; height: 4px; bottom: -20px; left: 0; right: 0; margin: 0 0; }
+.section_heading_box_features h5{margin: 50px 0px; text-align: left; font-size: 16px; line-height: 30px; font-weight: 200;}
+
+.home_page_features{ background-color:#0F2883; }
+
 
 /* ===================================
     Hosting Feature Section
@@ -579,6 +586,7 @@ h5, .h5{font-size: 20px; line-height: 24px; color: #333; font-weight: 400; font-
 .optimized_server_box_small p{color: grey; font-size: 14px}
 .optimized_server_box_small .img_box{margin: 0 auto; background-color: transparent; border: none;}
 .optimized_server_box_small img{ margin-bottom: 15px}
+.cpanel img{max-width: 100%;}
 
 
 
