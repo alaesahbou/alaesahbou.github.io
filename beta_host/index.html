@@ -414,7 +414,7 @@
                     </div>
                 </div>
             </div>
-    <img src="assets/images/cpanel-img.png" class="cpanel" alt="">
+    <img src="assets/images/cpanel-img.png" class="cpanel" id="cpanel" alt="">
         </div>
     </section>
     <!--Ends Here-->
@@ -479,22 +479,12 @@
 
     </script>
 	    <script>
-function deferJavaScripts() {
-  var scripts = [].slice.call(document.querySelectorAll('script[src]'));
-  var srcs = scripts.map(function(script) { return script.src; });
-  scripts.forEach(function(script) {
-    var newScript = document.createElement('script');
-    newScript.src = script.src;
-    newScript.async = false;
-    script.parentNode.insertBefore(newScript, script.nextSibling);
-    script.parentNode.removeChild(script);
-  });
-}
-if (window.addEventListener) {
-  window.addEventListener('load', deferJavaScripts, false);
-} else if (window.attachEvent) {
-  window.attachEvent('onload', deferJavaScripts);
-}
+  var screenWidth = window.innerWidth;
+
+  if (screenWidth < 992) {
+    var image = document.getElementById("cpanel");
+    image.parentNode.removeChild(image);
+  }
 </script>
 
     </body>
