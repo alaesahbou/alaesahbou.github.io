@@ -151,6 +151,7 @@ h2, .h2{font-size: 32px; line-height: 42px; font-family: 'Lato', sans-serif}
     padding
 ====================================== */
 .pd_top{padding-top: 10%}
+.pd_top_sm{padding-top: 5%}
 .section_padding{padding: 100px 0}
 .section_padding_top{padding-top: 100px}
 /*padding*/
@@ -565,6 +566,7 @@ h5, .h5{font-size: 20px; line-height: 24px; color: #333; font-weight: 400; font-
 .hosting_guarantee_box h5{margin-bottom: 10px}
 .hosting_guarantee_box_main {margin: 100px 10px;}
 .section_heading_box_ext  h1{position: relative; text-align: left; font-weight: bold; font-size: 50px}
+.section_heading_box_ext  h1.sm{position: relative; text-align: left; font-weight: bold; font-size: 36px}
 .section_heading_box_ext  h1:before{position: absolute; content: ""; background-color: #13ceed; width: 25%; height: 4px; bottom: -20px; left: 0; right: 0; margin: 0 0; }
 .section_heading_box_ext h5{margin: 50px 0px; color: #333; text-align: left; font-size: 20px; line-height: 30px; font-weight: 200;}
 .section_heading_box_ext .banner_btn {color: #000; position: absolute; left: 0}
@@ -596,6 +598,13 @@ h5, .h5{font-size: 20px; line-height: 24px; color: #333; font-weight: 400; font-
 .hosting_feature_box:hover{background-color: white; border-radius: 10px;}
 .hosting_feature_box:hover h5, .hosting_feature_box:hover p {color: black}
 .hosting_feature_box h5, .hosting_feature_box p {color: #fff}
+
+.hosting_feature_box_white{padding: 50px 20px; background-color: white; border-radius: 10px; margin-bottom: 20px}
+.hosting_feature_box_white:hover{background-color: #05A7F3; border-radius: 10px;}
+.hosting_feature_box_white:hover h5, .hosting_feature_box_white:hover p {color: white}
+.hosting_feature_box_white h5, .hosting_feature_box_white p {color: #000;}
+.hosting_feature_box_white img{margin-bottom: 10px}
+.hosting_feature_box_white img{margin-bottom: 10px; filter: drop-shadow(1px 1px 2px #fff);}
 
 .optimized_server_box{padding: 50px 50px; background-color: white; border-radius: 10px; height: 500px}
 .optimized_server_box:hover{}
