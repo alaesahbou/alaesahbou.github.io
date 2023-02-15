@@ -141,11 +141,18 @@ h2, .h2{font-size: 32px; line-height: 42px; font-family: 'Lato', sans-serif}
 .bg_eeeeee  {background-color: #eee}
 .bg_0b257f  {background-color: #0b257f}
 .bg_0d2681  {background-color: #0d2681}
+.contact_box_text { font-weight:50; letter-spacing: 1 }
+.contact_box_text span{ font-weight:500 }
+.Chat_now { color: #fff; padding: 10px 20px; background-color: #17308A; border-radius: 50px; font-size: 20px}
+.Chat_now:hover {color: #fff}
+.Chat_now img { height: 35px; padding-right: 5px }
 
 /* ===================================
     padding
 ====================================== */
+.pd_top{padding-top: 10%}
 .section_padding{padding: 100px 0}
+.section_padding_top{padding-top: 100px}
 /*padding*/
 .no_padding{padding: 0}
 .padding_tb_40  {padding: 35px 25px}
@@ -332,7 +339,10 @@ h2, .h2{font-size: 32px; line-height: 42px; font-family: 'Lato', sans-serif}
 .popular_domain_box:hover .btn_domain_box{background-color: #13ceed; border: 2px solid #13ceed; color: #fff}
 .default_navigation .menu_navigation_list > li > a:hover{color: #13ceed}
 .wordpress_bg{background: url(../images/wordpress-basic-img.png) no-repeat center; background-size: 50%;}
-.hosting_plan_box:hover .wordpress_bg .hosting_plan_price {color: #13CEED}
+.wordpress_bg_2{background: url(../images/wordpress-basic-img.png) no-repeat center; background-size: 70%;}
+.col_fd6601 {color: #fd6601}
+.col_17CEED {color: #17CEED; font-size: 14px}
+.hosting_plan_box:hover .wordpress_bg .hosting_plan_price, .hosting_plan_box:hover .wordpress_bg_2 .hosting_plan_price  {color: #13CEED}
 .hosting_plan_box:hover .contact_form_select {background-color: #0c2580;color: white}
 .hosting_plan_box:hover .contact_form_select option{background-color: #fff;color: #000}
 /* ===================================
@@ -342,6 +352,8 @@ h2, .h2{font-size: 32px; line-height: 42px; font-family: 'Lato', sans-serif}
 .banner_btn.active{display: inline-block; font-size: 14px; line-height: 16px; font-weight: 400; font-family: 'Lato', sans-serif; border-radius: 32px; width: 200px; padding: 13px 0; background-color: transparent; text-align: center; color: #fff; text-transform: uppercase; border: 2px solid #13ceed; margin-left: 20px; transition: all ease-in-out 0.5s}
 .hosting_plan_btn{font-size: 14px; line-height: 24px; font-weight: 400; color: #333; letter-spacing: 2px; text-transform: uppercase; background-color: transparent; border: 2px solid #13ceed; padding: 7px 25px; border-radius: 32px; display: inline-block; transition: all ease-in-out 0.5s}
 .shared_hosting_plan_btn{font-size: 14px; line-height: 24px; font-weight: 400; color: #fff; letter-spacing: 2px; text-transform: uppercase; background-color: #13ceed; border: 2px solid #13ceed; padding: 7px 25px; border-radius: 32px; display: inline-block; transition: all ease-in-out 0.5s}
+.reseller_hosting_plan_btn{font-weight: bold; font-size: 14px; font-weight: 400; color: #17CEED; padding: 7px 25px; display: inline-block}
+.reseller_hosting_plan_btn:hover;{font-weight: bold; font-size: 14px; font-weight: 400; color: #17CEED; padding: 7px 25px; display: inline-block}
 .shared_hosting_plan_btn:hover{font-size: 14px; line-height: 24px; font-weight: 400; color: #fff; letter-spacing: 2px; text-transform: uppercase; background-color: #13ceed; border: 2px solid #13ceed; padding: 7px 25px; border-radius: 32px; display: inline-block; transition: all ease-in-out 0.5s}
 .btn_get_started{font-size: 14px; line-height: 14px; color: #fff; border: 2px solid #13ceed; text-transform: uppercase; background-color: transparent; border-radius: 40px; display: inline-block; padding: 15px 35px; transition: all ease-in-out 0.5s}
 
@@ -519,6 +531,7 @@ a.logo_link{padding-left: 0 !important;}
       Hosting Plans Section
 ====================================== */
 .hosting_plan_box{background-color: #fff; padding: 40px 15px; box-shadow: 0 0 10px rgba(0,0,0,.10); border-radius: 10px; transition: all ease-in-out 0.5s; z-index: 10; position: relative;}
+.hosting_plan_contact{background-color: #fff; padding: 40px 15px; box-shadow: 0 0 10px rgba(0,0,0,.10); border-radius: 10px; transition: all ease-in-out 0.5s; z-index: 10; position: relative;}
 .hosting_plan_tb{background-color: #fff; padding: 40px 15px; border-radius: 10px; z-index: 10; position: relative;}
 h4, .h4{font-size: 24px; line-height: 32px; color: #132b7e; font-weight: 400; font-family: 'Lato', sans-serif}
 .hosting_plan_box h4{position: relative; margin-bottom: 30px}
