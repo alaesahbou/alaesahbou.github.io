@@ -593,8 +593,9 @@ h5, .h5{font-size: 20px; line-height: 24px; color: #333; font-weight: 400; font-
 .img_box figure{display: table-cell; vertical-align: middle; text-align: center}
 .img_box img{width: 64px; height: 64px}
 .hosting_feature_box{padding: 50px 50px;}
-.hosting_feature_box:hover{background-color: white; border-radius: 10px}
+.hosting_feature_box:hover{background-color: white; border-radius: 10px;}
 .hosting_feature_box:hover h5, .hosting_feature_box:hover p {color: black}
+.hosting_feature_box h5, .hosting_feature_box p {color: #fff}
 
 .optimized_server_box{padding: 50px 50px; background-color: white; border-radius: 10px; height: 500px}
 .optimized_server_box:hover{}
@@ -1993,10 +1994,11 @@ span.error{display: none !important;}
     text-decoration: none; 
     text-transform: uppercase; 
     color: #333; 
-    padding: 14px 50px; 
+    padding: 14px 10px; 
     border: solid 2px #777; 
     border-radius: 50px; 
     font-weight: 500;
+    margin-bottom: 20px;
   } 
 
   .tb th a:hover  { 
@@ -2008,7 +2010,7 @@ span.error{display: none !important;}
     background:  -moz-linear-gradient(left,#039ff5 0,#14cfed 100%)!important; 
     background:  -webkit-linear-gradient(left,#039ff5 0,#14cfed 100%)!important; 
     background:  linear-gradient(to right,#039ff5 0,#14cfed 100%)!important; 
-    min-width:  180px!important; 
+    min-width:  90%!important; 
     color:  #fff!important; 
     border:  none!important; 
     font-size:  14px!important; 
