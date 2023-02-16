@@ -87,7 +87,7 @@
 	background:url("../images/slider_bar.png") no-repeat;
 }
 .slider-container #slider .ui-slider-range {
-	background-color: #13ceed;
+	background-color: #FD6600;
 	width: 22px;
 	left: 0;
 	bottom: 0;
@@ -95,7 +95,7 @@
 }
 .slider-container #slider .ui-slider-handle {
 	outline: none;
-	background: url(../images/slider_handle.png) no-repeat left top;
+	background: url(../images/hostiko-27_handle_img.png) no-repeat left top;
 	border-radius: 0;
 	border: 0;
 	width: 45px;
@@ -127,7 +127,7 @@
 .price_rangetxt div.icon span{
 	display:block;
 	text-transform: uppercase;
-	color: rgba(255,255,255,.20);
+	color: #14BBD6;
 	font-size: 16px;
 	line-height: 24px;
 	font-weight: 400;
@@ -156,8 +156,8 @@ position: relative;
 .price_content .value_text {
 	font-size: 16px;
 	line-height: 20px;
-	color:#fff;
-	font-weight: 400;
+	color:#000;
+	font-weight: 200;
 	text-align: center;
 	padding-top: 20px;
 	position: relative;
@@ -175,7 +175,7 @@ position: relative;
 }
 .price_content .value {
 	display: block;
-	color:#fff;
+	color:#000;
 	line-height:20px;
 	font-weight: 400;
 	font-size: 20px;
@@ -236,7 +236,7 @@ position: relative;
 	border-radius: 6px
 }
 .inner_price_content{
-	background-color: #13ceed;
+	background-color: #fff;
 	padding: 25px 0;
 	border: 1px solid #13ceed;
 	border-radius: 10px;

@@ -328,6 +328,7 @@ h2, .h2{font-size: 32px; line-height: 42px; font-family: 'Lato', sans-serif}
 .hosting_plan_box:hover{background-color: #0c2580}
 .hosting_plan_box:hover h4, .hosting_plan_box:hover p, .hosting_plan_box:hover .hosting_plan_price{color: #fff}
 .hosting_plan_box:hover .hosting_plan_btn{background-color: #13ceed; border: 2px solid #13ceed; color: #fff}
+.hosting_plan_btn:hover {background-color: #13ceed; border: 2px solid #13ceed; color: #fff}
 .footer_links_list li a:hover{color: #029ef5}
 .footer_social_links li a i:hover{color: #029ef5}
 .hosting_plan_box:hover .shared_hosting_list li{color: #fff}
@@ -352,6 +353,9 @@ h2, .h2{font-size: 32px; line-height: 42px; font-family: 'Lato', sans-serif}
 .banner_btn{display: inline-block; font-size: 14px; line-height: 14px; font-weight: 400; font-family: 'Lato', sans-serif; border-radius: 32px; width: 200px; padding: 13px 0; background-color: #13ceed; text-align: center; color: #fff; text-transform: uppercase; border: 2px solid #13ceed; transition: all ease-in-out 0.5s}
 .banner_btn.active{display: inline-block; font-size: 14px; line-height: 16px; font-weight: 400; font-family: 'Lato', sans-serif; border-radius: 32px; width: 200px; padding: 13px 0; background-color: transparent; text-align: center; color: #fff; text-transform: uppercase; border: 2px solid #13ceed; margin-left: 20px; transition: all ease-in-out 0.5s}
 .hosting_plan_btn{font-size: 14px; line-height: 24px; font-weight: 400; color: #333; letter-spacing: 2px; text-transform: uppercase; background-color: transparent; border: 2px solid #13ceed; padding: 7px 25px; border-radius: 32px; display: inline-block; transition: all ease-in-out 0.5s}
+
+.hosting_plan_btn_2{font-size: 14px; line-height: 24px; font-weight: 400; color: #333; letter-spacing: 2px; text-transform: uppercase; background-color: #13ceed; border: 2px solid #13ceed; padding: 7px 25px; border-radius: 32px; display: inline-block; transition: all ease-in-out 0.5s}
+
 .shared_hosting_plan_btn{font-size: 14px; line-height: 24px; font-weight: 400; color: #fff; letter-spacing: 2px; text-transform: uppercase; background-color: #13ceed; border: 2px solid #13ceed; padding: 7px 25px; border-radius: 32px; display: inline-block; transition: all ease-in-out 0.5s}
 .reseller_hosting_plan_btn{font-weight: bold; font-size: 14px; font-weight: 400; color: #17CEED; padding: 7px 25px; display: inline-block}
 .reseller_hosting_plan_btn:hover;{font-weight: bold; font-size: 14px; font-weight: 400; color: #17CEED; padding: 7px 25px; display: inline-block}
@@ -2038,3 +2042,20 @@ span.error{display: none !important;}
     box-shadow: 0 10px 20px rgba(11,37,127,0.5);
   } 
 }     
+
+.bg_vps {
+    background-image: url(../images/vps_lunch.jpg) !important; 
+    background-position: center !important; 
+    background-repeat: no-repeat !important; 
+    background-size: cover !important; 
+    background-repeat-x: no-repeat !important; 
+    background-repeat-y: no-repeat !important;
+}
+
+.margin_bottom45 {
+    margin-bottom: 45px;
+}
+
+.font_size96 {
+    font-size: 96px;
+}
