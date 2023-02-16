@@ -336,8 +336,8 @@ h2, .h2{font-size: 32px; line-height: 42px; font-family: 'Lato', sans-serif}
 .btn_get_started:hover{background-color: #13ceed; border: 2px solid #13ceed; color: #fff}
 .solution_box:hover .solution_box_btn{background-color: #13ceed; border: 2px solid #13ceed; color: #fff}
 .dedicate_server_table tbody tr:hover .dedicated_server_btn{background-color: #13ceed; border: 2px solid #13ceed; color: #fff}
-.dedicate_server_table tbody tr:hover{background-color: #e6edf1}
-.dedicate_server_table tbody tr:hover td{background-color: transparent}
+.dedicate_server_table tbody tr:hover{background-color: #0F3089; transform: scale(1.03);}
+.dedicate_server_table tbody tr:hover td{background-color: transparent; color: #fff;}
 .popular_domain_box:hover .btn_domain_box{background-color: #13ceed; border: 2px solid #13ceed; color: #fff}
 .default_navigation .menu_navigation_list > li > a:hover{color: #13ceed}
 .wordpress_bg{background: url(../images/wordpress-basic-img.png) no-repeat center; background-size: 50%;}
@@ -722,7 +722,8 @@ h6, .h6{font-size: 18px; line-height: 20px; font-weight: 400; font-family: 'Lato
           Dedicated Server Section
 ====================================== */
 .dedicate_server_table{ margin-bottom: 0}
-.dedicate_server_table thead th{background-color: transparent; text-align: left; font-size: 20px; line-height: 24px; font-weight: 400; color: #fff; font-family: 'Lato', sans-serif; text-transform: uppercase; padding: 20px; border-bottom: none}
+.dedicate_server_table thead th:first-child{border-radius: 10px 0 0 10px;}
+.dedicate_server_table thead th{background-color: #fff; text-align: left; font-size: 14px; font-weight: 600; font-family: 'Lato', sans-serif; text-transform: uppercase; padding: 20px; border-bottom: none}
 .dedicate_server_table tbody td{background-color: #fff; font-size: 16px; line-height: 20px; font-weight: 400; text-align: left; padding: 20px}
 .dedicate_server_table tbody td:first-child{color: #333}
 .dedicate_server_table tbody td:nth-child(6){color: #029ef5; font-size: 16px; font-weight: 600; font-family: 'Lato', sans-serif}
@@ -733,13 +734,13 @@ h6, .h6{font-size: 18px; line-height: 20px; font-weight: 400; font-family: 'Lato
 /* ===================================
           Solution Box Section
 ====================================== */
-.solution_box{background-color: #0d2781; padding: 40px 0; border-radius: 10px; transition: all ease-in-out 0.5s}
-.solution_box h4{position: relative; margin-bottom: 40px}
+.solution_box{background-color: #fff; padding: 40px 0; border-radius: 10px; transition: all ease-in-out 0.5s; box-shadow: 5px 5px 5px 0 rgba(0,0,0,.10)}
+.solution_box h4{position: relative; color: #000; margin-bottom: 40px}
 .solution_box h4:before{position: absolute; content: ""; background-color: #13ceed; width: 30%; height: 2px; left: 0; right: 0; margin: 0 auto; bottom: -15px;}
-.solution_box_list li{font-size: 16px; line-height: 32px; color: #fff; font-weight: 400}
+.solution_box_list li{font-size: 16px; line-height: 32px; color: #000; font-weight: 400}
 .solution_box_list{margin-bottom: 40px}
-.solution_box .hosting_plan_price{color: #fff; margin-bottom: 20px}
-.solution_box_btn{font-size: 14px; line-height: 14px; color: #fff; background-color: transparent; border-radius: 40px; display: inline-block; border: 2px solid #13ceed; text-transform: uppercase; padding: 10px 30px; transition: all ease-in-out 0.5s}
+.solution_box .hosting_plan_price{color: #FD6600; margin-bottom: 20px}
+.solution_box_btn{font-size: 14px; line-height: 14px; color: #000; background-color: transparent; border-radius: 40px; display: inline-block; border: 2px solid #13ceed; text-transform: uppercase; padding: 10px 30px; transition: all ease-in-out 0.5s}
 
 
 
@@ -834,7 +835,11 @@ h6, .h6{font-size: 18px; line-height: 20px; font-weight: 400; font-family: 'Lato
 .coupon_code_box{display: inline-block; font-size: 38px; color: #fcb100; font-weight: 600; font-family: 'Lato', sans-serif; vertical-align: middle}
 .coupon_code_box small{font-size: 13px; line-height: 26px; color: #000; font-weight: 400}
 .vps_plan_list li{font-size: 16px; line-height: 40px; text-align: left; position: relative}
+.vps_plan_list2 li{font-size: 16px; line-height: 40px; text-align: left; position: relative; margin-left: 25px;}
+.vps_plan_list3 li{font-size: 16px; line-height: 40px; text-align: left; position: relative; margin-left: 25px; color: #fff}
 .vps_plan_list li:before{position: absolute; content: ""; background: url("../images/hostiko27-ssl-tick.png") no-repeat center; width: 20px; height: 20px; left: -25px; top: 12px}
+.vps_plan_list3 li:before{position: absolute; content: ""; background: url("../images/hostiko27-ssl-tick.png") no-repeat center; width: 20px; height: 20px; left: -25px; top: 12px}
+.vps_plan_list2 li:before{position: absolute; content: ""; background: url("../images/hostiko27-ssl-tick.png") no-repeat center; width: 20px; height: 20px; left: -25px; top: 12px}
 
 @media only screen and (min-width: 992px){.menu_navigation_list li.dropdown:hover .dropdown-menu {display: block}}
 
@@ -1021,7 +1026,9 @@ h6, .h6{font-size: 18px; line-height: 20px; font-weight: 400; font-family: 'Lato
 .outer_data_center_img{width: 116px; height: 116px; border: 2px solid #13ceed; border-radius: 100%; display: table}
 .outer_data_center_img figure{display: table-cell; vertical-align: middle}
 .data_center_heading_box h4{font-size: 26px; line-height: 30px; color: #fff; font-weight: 400; font-family: 'Lato', sans-serif; margin-bottom: 10px}
+.data_center_heading_box2 h4{font-size: 26px; line-height: 30px; color: #000; font-weight: 400; font-family: 'Lato', sans-serif; margin-bottom: 10px}
 .data_center_heading_box p{color: #fff}
+.data_center_heading_box2 p{color: #000}
 /* ===================================
             DDoS Protection
 ====================================== */
@@ -2054,6 +2061,10 @@ span.error{display: none !important;}
 
 .margin_bottom45 {
     margin-bottom: 45px;
+}
+
+.top_border{
+    border-top: 1px solid grey;
 }
 
 .font_size96 {
