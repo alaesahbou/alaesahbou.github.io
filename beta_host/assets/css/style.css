@@ -515,6 +515,7 @@ a.logo_link{padding-left: 0 !important;}
     #ext_web, #home_page_features{width: 100%; margin-top: 30px}
     .tb thead { display:none }
     .start-img { width: 50% }
+    .data_center_box h4, .data_center_box p{text-align: center;}
 }
 
 @media (max-width: 767px) {
@@ -739,6 +740,16 @@ h5, .h5{font-size: 20px; line-height: 24px; color: #333; font-weight: 400; font-
 .optimized_server_box_small .img_box{margin: 0 auto; background-color: transparent; border: none;}
 .optimized_server_box_small img{ margin-bottom: 15px}
 
+
+
+@media screen and (min-width: 992px) {
+.outer_data_center_img{width: 116px; height: 116px; border: 2px solid #13ceed; border-radius: 100%; display: table}
+.outer_data_center_img figure{display: table-cell; vertical-align: middle}
+}
+.margin_top_m_20 {
+    margin-top: -20px;
+}
+
 @media screen and (max-width: 992px) {
     .cpanel {
       display: none;
@@ -749,6 +760,8 @@ h5, .h5{font-size: 20px; line-height: 24px; color: #333; font-weight: 400; font-
     .section_cpanel_padding{
         padding: 100px 0px;
     }
+    .outer_data_center_img{width: 116px; height: 116px; border: 2px solid #13ceed; border-radius: 100%; display: table; margin: 0 auto;}
+    .outer_data_center_img figure{display: table-cell; vertical-align: middle}
   }
 @media screen and (min-width: 1200px) {
     .cpanel {
@@ -1134,8 +1147,7 @@ h6, .h6{font-size: 18px; line-height: 20px; font-weight: 400; font-family: 'Lato
     left: 0;
     transition: .8s ease-in-out;}
 .data_center_box p{font-size: 14px}
-.outer_data_center_img{width: 116px; height: 116px; border: 2px solid #13ceed; border-radius: 100%; display: table}
-.outer_data_center_img figure{display: table-cell; vertical-align: middle}
+
 .data_center_heading_box h4{font-size: 26px; line-height: 30px; color: #fff; font-weight: 400; font-family: 'Lato', sans-serif; margin-bottom: 10px}
 .data_center_heading_box2 h4{font-size: 26px; line-height: 30px; color: #000; font-weight: 400; font-family: 'Lato', sans-serif; margin-bottom: 10px}
 .data_center_heading_box p{color: #fff}
