@@ -284,6 +284,106 @@
     </section>
     <!--Ends Here-->
     <!--ext_web_hosting Section-->
+    <section class="section_padding radio_sec text-center hosting_guarantee_section bg_f2f6f8">
+        <div class="container">
+    <div class="max-w-full grid grid-cols-1 text-center">
+      <div class="lg:w-10/12 mx-auto">
+        <h2>
+          Additional features for the best website hosting experience
+        </h2>
+      </div>
+    </div>
+  </div>
+  <div class="tabset-horz" id="tab-menu-horizontal tabs">
+    <input class="radio" id="tab-first" name="horizontal tabs" type="radio" checked="">
+    <input class="radio" id="tab-second" name="horizontal tabs" type="radio">
+    <input class="radio" id="tab-third" name="horizontal tabs" type="radio">
+    <input class="radio" id="tab-fourth" name="horizontal tabs" type="radio">
+    <div class="tabs inline-flex sm:px-0 px-4">
+      <label class="tab" id="tab-first-tab" for="tab-first">
+        SSD storage
+      </label>
+      <label class="tab" id="tab-second-tab" for="tab-second">
+        Free Let's Encrypt SSL Certificate
+      </label>
+      <label class="tab" id="tab-third-tab" for="tab-third">
+        Free Cloudflare CDN
+      </label>
+      <label class="tab" id="tab-fourth-tab" for="tab-fourth">
+        CloudLinux 
+      </label>
+    </div>
+    <div class="grid w-full grid-cols-1 gap-8 mx-auto tab-panels">
+      <div id="tab-first-panel" class="tab-panel">
+        <div class="grid w-full grid-cols-1 gap-8 mx-auto md:grid-cols-2 lg:grid-cols-2 lg:max-w-full container">
+          <div class="col-span-1 icon-feature cursor-default">
+            <p class="pb-4">
+              HostPapa uses Solid State Disks (SSD) for data storage. For your website hosting, this means a much faster loading speed. If your server can display your website at lightning speed, this will contribute to the user experience on your site. This includes more time spent on site, more interaction, more pages visited, eventually getting you to the goal you have for your website, whether it’s selling something or sharing your expertise, etc. 
+            </p>
+          </div>
+          <div class="col-span-1 icon-feature cursor-default">
+            <p class="pb-4">
+              SSDs are three times faster than the traditional HDDs (Hard Disk Drives) where data was stored in the past. Some website hosting providers still rely on those, putting their customer data at risk of getting lost, as HDDs are not just slower but also a lot less reliable. HostPapa doesn’t compromise on quality when it comes to our customers’ data and hosting experience. 
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="tab-second-panel" class="tab-panel">
+        <div class="grid w-full grid-cols-1 gap-8 mx-auto md:grid-cols-2 lg:grid-cols-2 lg:max-w-full container">
+          <div class="col-span-1 icon-feature cursor-default">
+            <p class="pb-4">
+              SSL certificates are an absolute must if you want your website to be deemed safe. Google is merciless to websites that don’t have SSL: not only will this affect your website’s search rankings, your visitors will also see an alert when entering your website, telling them that it’s not safe. 
+            </p>
+          </div>
+          <div class="col-span-1 icon-feature cursor-default">
+            <p class="pb-4">
+              SSL certificates are needed because they encrypt the data exchange between your website and the visitor’s browser, making it impossible for hackers to get access to this data. This is especially important if you store your customers’ credit card information. For a complete website hosting experience, HostPapa provides you with a Let’s Encrypt SSL Certificate completely free of charge! 
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="tab-third-panel" class="tab-panel">
+        <div class="grid w-full grid-cols-1 gap-8 mx-auto md:grid-cols-2 lg:grid-cols-2 lg:max-w-full container">
+          <div class="col-span-1 icon-feature cursor-default flex">
+            <div>
+              <p class="pb-4">
+                A Content Distribution Network (CDN) is a network of servers distributed geographically. The purpose of a CDN is to deliver content on the Internet much faster. If a user in Toronto is trying to access your website, the closest server to them will take care of this. But someone coming to your website from Sydney, Australia, will be catered to by a server closest to them. The main host server holds your website content, and all the other servers have a cached version each. 
+              </p>
+            </div>
+          </div>
+          <div class="col-span-1 icon-feature cursor-default flex">
+            <div>
+              <p class="pb-4">
+                CDNs not only help the stability of your website by distributing the traffic among different servers, they can also help to prevent cyber attacks. If a hacker tries to gain access to the cached version of the website from the server closest to them, your original content will remain untouched. HostPapa always aims to provide you with the best website hosting features to ensure your visitors are always pleased with your website. 
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="tab-fourth-panel" class="tab-panel">
+        <div class="grid w-full grid-cols-1 gap-8 mx-auto md:grid-cols-2 lg:grid-cols-2 lg:max-w-full container">
+          <div class="col-span-1 icon-feature cursor-default flex">
+            <div>
+              <p class="pb-4">
+                CloudLinux helps protect websites in a shared website hosting environment. If one of the websites on the servers gets attacked or gets a sudden growth in popularity and a lot of unexpected traffic, it will start draining all of the server resources, affecting other websites. CloudLinux makes sure this doesn’t happen. It will either slow down the website to stop it from hogging all resources or it will temporarily shut it down. 
+              </p>
+            </div>
+          </div>
+          <div class="col-span-1 icon-feature cursor-default flex">
+            <div>
+              <p class="pb-4">
+                HostPapa’s goal is to ensure that all of our customers can enjoy their website hosting without any issues. So if one of the websites encounters a problem, while it is being resolved, it will not affect any other websites on the same server. 
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+        </div>
+    </section>
+    <!--Ends Here-->
+    <!--ext_web_hosting Section-->
     <section class="section_padding text-center hosting_guarantee_section">
         <div class="container">
             <div class="row">
@@ -477,6 +577,24 @@
             // $("#testimonial").load("include/testimonial.html");
             $("#footer").load("include/footer.html");
         });
+
+    </script>
+    <script>
+        const radioButtons = document.querySelectorAll('.radio');
+const tabPanels = document.querySelectorAll('.tab-panel');
+
+function showPanel() {
+  const checkedButton = document.querySelector('.radio:checked');
+  const targetPanel = document.querySelector(`#${checkedButton.id}-panel`);
+  tabPanels.forEach(panel => panel.style.display = 'none');
+  targetPanel.style.display = 'block';
+}
+
+showPanel(); // show the initial panel
+
+radioButtons.forEach(button => {
+  button.addEventListener('change', showPanel);
+});
 
     </script>
     <script>
