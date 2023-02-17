@@ -513,6 +513,7 @@ a.logo_link{padding-left: 0 !important;}
 
 @media (max-width: 992px) {
     #ext_web, #home_page_features{width: 100%; margin-top: 30px}
+    .tb thead { display:none }
 }
 
 @media (max-width: 767px) {
@@ -521,7 +522,6 @@ a.logo_link{padding-left: 0 !important;}
         width: 90%;
         margin-left: 5%;
     }
-    .tb thead { display:none }
     .search_box{
         width: 90%;
         margin-left: 5%;
@@ -1817,7 +1817,7 @@ span.error{display: none !important;}
   } 
 }     
 
-@media (min-width: 991px){ 
+@media (min-width: 1100px){ 
   .tb th  { 
     display:  table-cell !important;
     width: 380px;
@@ -1853,7 +1853,7 @@ span.error{display: none !important;}
   } 
 }     
 
-@media (min-width: 991px){ 
+@media (min-width: 1100px){ 
   .tb th + th  { 
     width: 100%;
   } 
@@ -1889,7 +1889,7 @@ span.error{display: none !important;}
   } 
 }     
 
-@media (min-width: 991px){ 
+@media (min-width: 1100px){ 
   .tb td  { 
     display:  table-cell !important;
     width: 380px;
@@ -1922,7 +1922,7 @@ span.error{display: none !important;}
   } 
 }     
 
-@media (min-width: 991px){ 
+@media (min-width: 1100px){ 
   .tb td + td  { 
     width: 10px;
   } 
