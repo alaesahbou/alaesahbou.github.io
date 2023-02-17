@@ -936,10 +936,10 @@ h6, .h6{font-size: 18px; line-height: 20px; font-weight: 400; font-family: 'Lato
 .package_price{vertical-align: middle}
 .coupon_code_box{display: inline-block; font-size: 38px; color: #fcb100; font-weight: 600; font-family: 'Lato', sans-serif; vertical-align: middle}
 .coupon_code_box small{font-size: 13px; line-height: 26px; color: #000; font-weight: 400}
-.vps_plan_list li{font-size: 16px; line-height: 40px; text-align: left; position: relative}
+.vps_plan_list li{font-size: 16px; line-height: 40px; text-align: left; position: relative; margin-left: 25px}
 .vps_plan_list2 li{font-size: 16px; line-height: 40px; text-align: left; position: relative; margin-left: 25px;}
 .vps_plan_list3 li{font-size: 16px; line-height: 40px; text-align: left; position: relative; margin-left: 25px; color: #fff}
-.vps_plan_list li:before{position: absolute; content: ""; background: url("../images/hostiko27-ssl-tick.png") no-repeat center; width: 20px; height: 20px; left: -25px; top: 12px}
+.vps_plan_list li:before{position: absolute; content: ""; background: url("../images/hostiko27-ssl-tick.png") no-repeat center; width: 20px; height: 20px; left: 0px; top: 12px}
 .vps_plan_list3 li:before{position: absolute; content: ""; background: url("../images/hostiko27-ssl-tick.png") no-repeat center; width: 20px; height: 20px; left: -25px; top: 12px}
 .vps_plan_list2 li:before{position: absolute; content: ""; background: url("../images/hostiko27-ssl-tick.png") no-repeat center; width: 20px; height: 20px; left: -25px; top: 12px}
 
