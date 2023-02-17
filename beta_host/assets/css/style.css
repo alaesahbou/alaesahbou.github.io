@@ -516,10 +516,12 @@ a.logo_link{padding-left: 0 !important;}
 }
 
 @media (max-width: 767px) {
+    
     .optimized_server_box, .optimized_server_box_small {
         width: 90%;
         margin-left: 5%;
     }
+    .tb thead { display:none }
     .search_box{
         width: 90%;
         margin-left: 5%;
@@ -554,8 +556,14 @@ a.logo_link{padding-left: 0 !important;}
     .search_btn{width: 25%; background-color: #13ceed; color: #fff; font-size: 14px; line-height: 20px; border-radius: 32px; padding: 14px 0px; border: none; letter-spacing: 2px; transition: all ease-in-out 0.5s}
 }
 
+@media (max-width: 1140px) {
+    .Compare_tr{ display:none }
+}
 
 @media (max-width: 767px) {
+    .trial_free {
+        text-align: center;
+    }
     .section_heading_box_ext  h1{position: relative; text-align: center; font-weight: bold; font-size: 30px}
     .section_heading_box_ext  h1.sm{position: relative; text-align: center; font-size: 16px}
     .section_heading_box_ext  h1:before{position: absolute; content: ""; background-color: #13ceed; width: 25%; height: 4px; bottom: -20px; left: 0; right: 0; margin: 0 auto; }
@@ -1316,7 +1324,6 @@ td+td, th+th {
     background:none !important;
 }
 
-@media (min-width: 640px) {
     .ssl_certificate_list {
         display:none;
     }
@@ -1330,7 +1337,7 @@ td+td, th+th {
     td+td, th+th {
         width: auto;
     }
-}
+
 .ssl_plan_price{font-size: 30px; line-height: 30px; color: #13ceed}
 .btn_add_to_cart{display: inline-block; background-color: #13ceed; color: #fff; font-size: 14px; line-height: 20px; padding: 10px 30px; transition: all ease-in-out 0.5s; border-radius: 40px}
 .btn_add_to_cart:hover{background-color: #0b257f; color: #fff}
