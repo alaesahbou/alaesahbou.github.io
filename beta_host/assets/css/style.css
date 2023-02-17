@@ -562,6 +562,9 @@ h4, .h4{font-size: 24px; line-height: 32px; color: #132b7e; font-weight: 400; fo
 /* ===================================
       Hosting Guarantee Section
 ====================================== */
+.contact_sec {background-color: #233D98; padding: 100px 100px; border-radius: 50px}
+.contact_sec .contact_form_field{background-color: transparent; border-radius: 30px;}
+/*.contact_sec textarea{width}*/
 .section_heading_box  p{position: relative; margin-bottom: 60px; font-size: 16px; margin-top: 10px}
 .section_heading_box  p:before{position: absolute; content: ""; background-color: #13ceed; width: 10%; height: 5px; bottom: -20px; left: 0; right: 0; margin: 0 auto; border-radius: 32px}
 .hosting_guarantee_box figure img{width: 65px; height: 65px;}
@@ -789,7 +792,8 @@ h6, .h6{font-size: 18px; line-height: 20px; font-weight: 400; font-family: 'Lato
 ====================================== */
 .contact_form_field {border: 1px solid #d7d7d7;border-radius: 32px;padding: 12px 25px;box-shadow: 0 0 5px 0 rgba(0,0,0,.10)}
 .contact_form_select {border: 1px solid #d7d7d7;border-radius: 5px;padding: 12px 25px; backgroung-color: transparent;}
-.submit_btn_contact_form{border: none; background-color: #029ef5; color: #fff; font-size: 14px; line-height: 14px; border-radius: 40px; padding: 15px 30px; text-transform: uppercase}
+.submit_btn_contact_form{border: 1px solid #029ef5; background-color: transparent; color: #fff; font-size: 14px; line-height: 14px; border-radius: 40px; padding: 15px 30px; text-transform: uppercase}
+.submit_btn_contact_form:hover{border: 1px solid transparent; background-color: #029ef5; color: #fff; font-size: 14px; line-height: 14px; border-radius: 40px; padding: 15px 30px; text-transform: uppercase}
 /* ===================================
         Advertisement Section
 ====================================== */
@@ -1097,10 +1101,11 @@ svg#Layer_1{width: 80px; height: 77px}
 .testimonial_box2 figure, .testimonial_box3 figure{position: absolute; bottom: -50px; left: 0; right: 0; margin: 0 auto}
 .testimonial_box3{background-color: #fff !important;}
 /*Style Two*/
-.testimonial_slider_style2_box{border: 1px solid #0b257f; padding: 40px}
+.testimonial_slider_style2_box{border: 1px solid #0b257f; padding: 40px; background-color: #fff}
 .testimonial_social_links li{display: inline-block}
 .testimonial_social_links li a i{color: #666; font-size: 14px; padding: 0 5px}
 .testimonial_slider_style2_box .rating_star_list{margin-bottom: 10px}
+.testimonial_slider_style2_box .img-fluid {border-radius: 50%}
 .testimonial_slider_style2_box p{margin-bottom: 10px}
 
 .testimonial_slider_style2_indicator, .testimonial_slider_style3_indicator{bottom: -50px; right: 0; left: auto}
@@ -1142,7 +1147,9 @@ svg#Layer_1{width: 80px; height: 77px}
 .landing_page_banner{height: 640px}
 
 
-
+.color_03A0F5 {
+    color: #03A0F5;
+}
 .privacy_policy_text{color: #333}
 
 
