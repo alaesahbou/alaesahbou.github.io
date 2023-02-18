@@ -45,10 +45,10 @@
                            <div class="wpb_wrapper">
                               <article>
                                  <ul>
-                                    <li class="bg-purple"><button>Basic</button></li>
-                                    <li class="bg-blue"><button>Standard</button></li>
-                                    <li class="bg-blue active"><button>Ultimate</button></li>
-                                    <li class="bg-blue"><button>Business</button></li>
+                                    <li class="bg-purple" id="basic"><button id="hide-column-2-btn">Basic</button></li>
+                                    <li class="bg-blue" id="standard"><button id="hide-column-3-btn">Standard</button></li>
+                                    <li class="bg-blue active" id="ultimate"><button id="hide-column-4-btn">Ultimate</button></li>
+                                    <li class="bg-blue" id="business"><button id="hide-column-5-btn">Business</button></li>
                                  </ul>
                                  <table>
                                     <thead>
@@ -990,6 +990,162 @@
       <script src="assets/js/jquery-3.3.1.min.js"></script>
       <script src="assets/js/bootstrap.min.js"></script>
       <script>
+         const hideColumn2Btn = document.getElementById('hide-column-2-btn');
+         const hideColumn3Btn = document.getElementById('hide-column-3-btn');
+         const hideColumn4Btn = document.getElementById('hide-column-4-btn');
+         const hideColumn5Btn = document.getElementById('hide-column-5-btn');
+         const basic = document.getElementById('basic');
+         const standard = document.getElementById('standard');
+         const ultimate = document.getElementById('ultimate');
+         const business = document.getElementById('business');
+         const secondChildren = document.querySelectorAll('.compare tr td:nth-child(2)');
+         const thirdChildren = document.querySelectorAll('.compare tr td:nth-child(3)');
+         const fourChildren = document.querySelectorAll('.compare tr td:nth-child(4)');
+         const fiveChildren = document.querySelectorAll('.compare tr td:nth-child(5)');
+       function adjustLayout() {
+           var screenWidth = window.innerWidth;
+
+           if (screenWidth < 992) {
+             for (let i = 0; i < thirdChildren.length; i++) {
+               thirdChildren[i].style.visibility = 'hidden';
+             }
+             for (let i = 0; i < secondChildren.length; i++) {
+               secondChildren[i].style.visibility = 'hidden';
+             }
+             for (let i = 0; i < fiveChildren.length; i++) {
+               fiveChildren[i].style.visibility = 'hidden';
+             }
+             for (let i = 0; i < fourChildren.length; i++) {
+               fourChildren[i].style.visibility = 'visible';
+               fourChildren[i].style.width = '100%';
+               thirdChildren[i].style.width = '0%';
+               secondChildren[i].style.width = '0%';
+               fiveChildren[i].style.width = '0%';
+               standard.classList.remove("active");
+               business.classList.remove("active");
+               basic.classList.remove("active");
+               ultimate.classList.add("active");
+             }
+           } else {
+             for (let i = 0; i < thirdChildren.length; i++) {
+               thirdChildren[i].style.visibility = 'visible';
+             }
+             for (let i = 0; i < fiveChildren.length; i++) {
+               fiveChildren[i].style.visibility = 'visible';
+             }
+             for (let i = 0; i < secondChildren.length; i++) {
+               secondChildren[i].style.visibility = 'visible';
+             }
+             for (let i = 0; i < fourChildren.length; i++) {
+               fourChildren[i].style.visibility = 'visible';
+               fiveChildren[i].style.width = '25%';
+               thirdChildren[i].style.width = '25%';
+               fourChildren[i].style.width = '25%';
+               secondChildren[i].style.width = '25%';
+             }
+           }
+         }
+
+         // Call the function on page load
+         adjustLayout();
+
+         // Call the function on window resize
+         window.addEventListener('resize', adjustLayout);
+
+
+         hideColumn2Btn.addEventListener('click', function() {
+           for (let i = 0; i < thirdChildren.length; i++) {
+               thirdChildren[i].style.visibility = 'hidden';
+             }
+             for (let i = 0; i < fourChildren.length; i++) {
+               fourChildren[i].style.visibility = 'hidden';
+             }
+             for (let i = 0; i < fiveChildren.length; i++) {
+               fiveChildren[i].style.visibility = 'hidden';
+             }
+             for (let i = 0; i < secondChildren.length; i++) {
+               secondChildren[i].style.visibility = 'visible';
+               secondChildren[i].style.width = '100%';
+               thirdChildren[i].style.width = '0%';
+               fourChildren[i].style.width = '0%';
+               fiveChildren[i].style.width = '0%';
+               ultimate.classList.remove("active");
+               business.classList.remove("active");
+               standard.classList.remove("active");
+               basic.classList.add("active");
+             }
+         });
+
+         hideColumn3Btn.addEventListener('click', function() {
+           for (let i = 0; i < secondChildren.length; i++) {
+               secondChildren[i].style.visibility = 'hidden';
+             }
+             for (let i = 0; i < fourChildren.length; i++) {
+               fourChildren[i].style.visibility = 'hidden';
+             }
+             for (let i = 0; i < fiveChildren.length; i++) {
+               fiveChildren[i].style.visibility = 'hidden';
+             }
+             for (let i = 0; i < thirdChildren.length; i++) {
+               thirdChildren[i].style.visibility = 'visible';
+               thirdChildren[i].style.width = '100%';
+               secondChildren[i].style.width = '0%';
+               fourChildren[i].style.width = '0%';
+               fiveChildren[i].style.width = '0%';
+               ultimate.classList.remove("active");
+               business.classList.remove("active");
+               basic.classList.remove("active");
+               standard.classList.add("active");
+             }
+         });
+
+         hideColumn4Btn.addEventListener('click', function() {
+           for (let i = 0; i < thirdChildren.length; i++) {
+               thirdChildren[i].style.visibility = 'hidden';
+             }
+             for (let i = 0; i < secondChildren.length; i++) {
+               secondChildren[i].style.visibility = 'hidden';
+             }
+             for (let i = 0; i < fiveChildren.length; i++) {
+               fiveChildren[i].style.visibility = 'hidden';
+             }
+             for (let i = 0; i < fourChildren.length; i++) {
+               fourChildren[i].style.visibility = 'visible';
+               fourChildren[i].style.width = '100%';
+               thirdChildren[i].style.width = '0%';
+               secondChildren[i].style.width = '0%';
+               fiveChildren[i].style.width = '0%';
+               basic.classList.remove("active");
+               business.classList.remove("active");
+               standard.classList.remove("active");
+               ultimate.classList.add("active");
+             }
+         });
+
+         hideColumn5Btn.addEventListener('click', function() {
+           for (let i = 0; i < thirdChildren.length; i++) {
+               thirdChildren[i].style.visibility = 'hidden';
+             }
+             for (let i = 0; i < secondChildren.length; i++) {
+               secondChildren[i].style.visibility = 'hidden';
+             }
+             for (let i = 0; i < fourChildren.length; i++) {
+               fourChildren[i].style.visibility = 'hidden';
+             }
+             for (let i = 0; i < fiveChildren.length; i++) {
+               fiveChildren[i].style.visibility = 'visible';
+               fiveChildren[i].style.width = '100%';
+               thirdChildren[i].style.width = '0%';
+               secondChildren[i].style.width = '0%';
+               fourChildren[i].style.width = '0%';
+               basic.classList.remove("active");
+               ultimate.classList.remove("active");
+               standard.classList.remove("active");
+               business.classList.add("active");
+             }
+         });
+
+
          // Side Nav
          function openNav() {
              document.getElementById("mySidenav").style.right = "0";

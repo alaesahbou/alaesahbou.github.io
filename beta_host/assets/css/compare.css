@@ -305,6 +305,14 @@
   } 
 }     
 
+@media (max-width: 992px){
+  .compare thead{
+    display: none;
+  }
+  .compare tr td:first-child {width: 100%}
+
+}
+
 @media (min-width: 991px){ 
   .compare th  { 
     display:  table-cell !important;
