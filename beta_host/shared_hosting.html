@@ -452,28 +452,23 @@
                            <div class="wpb_wrapper">
                               <article>
                                  <ul>
-                                    <li class="bg-purple">
-                                       <button>
+                                    <li class="bg-purple" id="lite">
+                                       <button id="hide-column-2-btn">
                                        Basic
                                        </button>
                                     </li>
-                                    <li class="bg-blue">
-                                       <button>
-                                       Standard
+                                    <li class="bg-blue active" id="express">
+                                       <button id="hide-column-3-btn">
+                                       Premium
                                        </button>
                                     </li>
-                                    <li class="bg-blue active">
-                                       <button>
-                                       Ultimate
-                                       </button>
-                                    </li>
-                                    <li class="bg-blue">
-                                       <button>
+                                    <li class="bg-blue" id="enhanced">
+                                       <button id="hide-column-4-btn">
                                        Business
                                        </button>
                                     </li>
                                  </ul>
-                                 <table>
+                                 <table id="tab">
                                     <thead>
                                        <tr>
                                           <th class="hide2">
@@ -825,6 +820,112 @@
       <script src="assets/js/jquery-3.3.1.min.js"></script>
       <script src="assets/js/bootstrap.min.js"></script>
       <script>
+         const hideColumn2Btn = document.getElementById('hide-column-2-btn');
+         const hideColumn3Btn = document.getElementById('hide-column-3-btn');
+         const hideColumn4Btn = document.getElementById('hide-column-4-btn');
+         const lite = document.getElementById('lite');
+         const express = document.getElementById('express');
+         const enhanced = document.getElementById('enhanced');
+         const secondChildren = document.querySelectorAll('.tb tr td:nth-child(2)');
+         const thirdChildren = document.querySelectorAll('.tb tr td:nth-child(3)');
+         const fourChildren = document.querySelectorAll('.tb tr td:nth-child(4)');
+       function adjustLayout() {
+           var screenWidth = window.innerWidth;
+
+           if (screenWidth < 992) {
+             for (let i = 0; i < thirdChildren.length; i++) {
+               thirdChildren[i].style.visibility = 'hidden';
+             }
+             for (let i = 0; i < secondChildren.length; i++) {
+               secondChildren[i].style.visibility = 'hidden';
+             }
+             for (let i = 0; i < fourChildren.length; i++) {
+               fourChildren[i].style.visibility = 'visible';
+               fourChildren[i].style.width = '100%';
+               thirdChildren[i].style.width = '0%';
+               secondChildren[i].style.width = '0%';
+               express.classList.remove("active");
+               lite.classList.remove("active");
+               enhanced.classList.add("active");
+             }
+           } else {
+             for (let i = 0; i < thirdChildren.length; i++) {
+               thirdChildren[i].style.visibility = 'visible';
+             }
+             for (let i = 0; i < secondChildren.length; i++) {
+               secondChildren[i].style.visibility = 'visible';
+             }
+             for (let i = 0; i < fourChildren.length; i++) {
+               fourChildren[i].style.visibility = 'visible';
+               fourChildren[i].style.width = '33%';
+               thirdChildren[i].style.width = '33%';
+               secondChildren[i].style.width = '33%';
+             }
+           }
+         }
+
+         // Call the function on page load
+         adjustLayout();
+
+         // Call the function on window resize
+         window.addEventListener('resize', adjustLayout);
+
+
+         hideColumn2Btn.addEventListener('click', function() {
+           for (let i = 0; i < thirdChildren.length; i++) {
+             thirdChildren[i].style.visibility = 'hidden';
+           }
+           for (let i = 0; i < fourChildren.length; i++) {
+             fourChildren[i].style.visibility = 'hidden';
+           }
+           for (let i = 0; i < secondChildren.length; i++) {
+             secondChildren[i].style.visibility = 'visible';
+             secondChildren[i].style.width = '100%';
+             thirdChildren[i].style.width = '0%';
+             fourChildren[i].style.width = '0%';
+             express.classList.remove("active");
+             enhanced.classList.remove("active");
+             lite.classList.add("active");
+           }
+         });
+
+         hideColumn3Btn.addEventListener('click', function() {
+           for (let i = 0; i < secondChildren.length; i++) {
+             secondChildren[i].style.visibility = 'hidden';
+           }
+           for (let i = 0; i < fourChildren.length; i++) {
+             fourChildren[i].style.visibility = 'hidden';
+           }
+           for (let i = 0; i < thirdChildren.length; i++) {
+             thirdChildren[i].style.visibility = 'visible';
+             thirdChildren[i].style.width = '100%';
+             secondChildren[i].style.width = '0%';
+             fourChildren[i].style.width = '0%';
+             enhanced.classList.remove("active");
+             lite.classList.remove("active");
+             express.classList.add("active");
+           }
+         });
+
+         hideColumn4Btn.addEventListener('click', function() {
+           for (let i = 0; i < thirdChildren.length; i++) {
+             thirdChildren[i].style.visibility = 'hidden';
+           }
+           for (let i = 0; i < secondChildren.length; i++) {
+             secondChildren[i].style.visibility = 'hidden';
+           }
+           for (let i = 0; i < fourChildren.length; i++) {
+             fourChildren[i].style.visibility = 'visible';
+             fourChildren[i].style.width = '100%';
+             thirdChildren[i].style.width = '0%';
+             secondChildren[i].style.width = '0%';
+             lite.classList.remove("active");
+             express.classList.remove("active");
+             enhanced.classList.add("active");
+           }
+         });
+
+
          // Side Nav
          function openNav() {
              document.getElementById("mySidenav").style.right = "0";

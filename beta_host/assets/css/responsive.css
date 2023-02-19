@@ -9,6 +9,27 @@
 @media only screen and (max-width: 991px) {
     .side_nav_button{display: none}
     .menu_navigation_list{background-color: #13ceed; width: 30%; top: 100%; right: 0; padding: 10px 0}
+    .menu_navigation_list_2{background-color: #fff; width: 50%; top: 100%; right: 0; padding: 10px 0; display: none; z-index: 9999}
+    .menu_navigation_list_2 > li {
+      background-color: #F4F3F3;
+      height: 60px;
+    }
+
+    .menu_navigation_list_2 > li > a {
+      padding: 5px 20px !important;
+      position: relative;
+      font-size: 16px;
+      color: #000;
+    }
+
+    .menu_navigation_list_2 > li > a::before {
+      content: "\2022";
+      color: #13CEED;
+      display: inline-block;
+      margin-right: 10px;
+      font-size: 30px;
+      vertical-align: middle;
+    }
     .default_navigation .menu_navigation_list > li > a{padding: 5px 20px !important; position: relative}
     .navigation_social_icon, .openBtn{display: none}
     .dropdown-toggle::after{right: 20px; position: absolute; top: 13px}

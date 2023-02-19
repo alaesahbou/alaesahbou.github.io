@@ -371,11 +371,47 @@ h2, .h2{font-size: 32px; line-height: 42px; font-family: 'Lato', sans-serif}
       Navigation Bar
 ====================================== */
 .default_navigation{padding: 15px 0}
+.menu-close-button {
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  text-align: center;
+}
 
+.menu-close-icon {
+  color: #000;
+  line-height: 1;
+  font-weight: bold;
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Set opacity here */
+  z-index: 9998; /* Set z-index high to ensure it covers all content */
+  display: none; /* Hide the overlay by default */
+}
 
 
 a.default_logo img{width: 120px}
-div#header {position: absolute;width: 100%; z-index: 9}
+@media screen and (min-width: 992px) {
+.scrolled {
+  background-color: #0F094B;
+}
+div#header {position: fixed;width: 100%; z-index: 9999}
+.close-menu {display: none}
+.menu_navigation_list_2 {display: none}
+}
+
+@media screen and (max-width: 992px) {
+    div#header {position: absolute;width: 100%; z-index: 9999; background-color: #0F094B;}
+    .default_logo {position: absolute; left: 50%; top: 15px; transform: translateX(-50%);}
+}
+
 .default_navigation .menu_navigation_list > li > a{font-size: 16px; line-height: 24px; color: #fff; font-weight: 400; font-family: 'Lati', sans-serif; padding: 10px 20px !important;}
 .navigation_social_icon li{display: inline-block}
 .navigation_social_icon li a i{font-size: 14px; color: rgba(255,255,255,.50); padding: 0 5px}
@@ -765,7 +801,7 @@ h5, .h5{font-size: 20px; line-height: 24px; color: #333; font-weight: 400; font-
   }
 @media screen and (min-width: 1200px) {
     .cpanel {
-      max-width: 90%;  position: absolute; z-index: 9999; right: 0;
+      max-width: 90%;  position: absolute; z-index: 9990; right: 0;
     }
     .section_cpanel_padding{
         padding-top: 100px; padding-bottom: 175px;
@@ -773,7 +809,7 @@ h5, .h5{font-size: 20px; line-height: 24px; color: #333; font-weight: 400; font-
   }
 @media screen and (max-width: 1200px) {
     .cpanel {
-      max-width: 70%;  position: absolute; z-index: 9999; right: 0;
+      max-width: 70%;  position: absolute; z-index: 9990; right: 0;
     }
     .section_cpanel_padding{
         padding-top: 100px; padding-bottom: 75px;
@@ -1890,7 +1926,7 @@ span.error{display: none !important;}
   } 
 
   .tb td:first-child { 
-    padding-left: 2%;
+    padding-left: 2%; width: 100%;
   } 
 
   .tb td  { 
