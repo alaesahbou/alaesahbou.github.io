@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Champions League Draw</title>
+    <script type="text/javascript">
+        // Define the team names and countries for each chapeau
+        var chapeau1 = [
+            ['Real Madrid', 'Spain'],
+            ['Frankfurt', 'Germany'],
+            ['Man City', 'England'],
+            ['Milan', 'Italy'],
+            ['Bayern', 'Germany'],
+            ['Paris', 'France'],
+            ['Porto', 'Portugal'],
+            ['Ajax', 'Netherlands']
+        ];
+
+        var chapeau2 = [
+            ['Liverpool', 'England'],
+            ['Chelsea', 'England'],
+            ['Barcelona', 'Spain'],
+            ['Juventus', 'Italy'],
+            ['Atlético', 'Spain'],
+            ['Sevilla', 'Spain'],
+            ['Leipzig', 'Germany'],
+            ['Tottenham', 'England']
+        ];
+
+        var chapeau3 = [
+            ['Dortmund', 'Germany'],
+            ['Salzburg', 'Austria'],
+            ['Shakhtar Donetsk', 'Ukraine'],
+            ['Inter', 'Italy'],
+            ['Napoli', 'Italy'],
+            ['Benfica', 'Portugal'],
+            ['Sporting CP', 'Portugal'],
+            ['Leverkusen', 'Germany']
+        ];
+
+        var chapeau4 = [
+            ['Rangers', 'Scotland'],
+            ['Dinamo Zagreb', 'Croatia'],
+            ['Marseille', 'France'],
+            ['Copenhagen', 'Denmark'],
+            ['Club Brugge', 'Belgium'],
+            ['Celtic', 'Scotland'],
+            ['Plzeň', 'Czech Republic'],
+            ['M. Haifa', 'Israel']
+        ];
+
+        // Perform the draw
+        var groups = [];
+        for (var i = 0; i < chapeau1.length; i++) {
+            for (var j = 0; j < chapeau2.length; j++) {
+                if (chapeau1[i][1] != chapeau2[j][1]) {
+                    for (var k = 0; k < chapeau3.length; k++) {
+                        if (chapeau1[i][1] != chapeau3[k][1] && chapeau2[j][1] != chapeau3[k][1]) {
+                            for (var l = 0; l < chapeau4.length; l++) {
+                                if (chapeau1[i][1] != chapeau4[l][1] && chapeau2[j][1] != chapeau4[l][1] && chapeau3[k][1] != chapeau4[l][1]) {
+                                    groups.push([chapeau1[i][0], chapeau2[j][0], chapeau3[k][0], chapeau4[l][0]]);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        // Display the results
+        function displayDraw() {
+            var draw = document.getElementById('draw');
+            draw.innerHTML = '<h1>Champions League Draw</h1>';
+            for (var i = 0; i < groups.length; i++) {
+                draw.innerHTML += '<h2>Group ' + (i+1) + '</h2>';
+                for (var j = 0; j < groups[i].length; j++) {
+                    draw.innerHTML += '<p>' + groups[i][j] + '</p>';
+}
+}
+}
+</script>
+
+</head>
+<body>
+    <div id="draw"></div>
+    <button onclick="displayDraw()">Perform Draw</button>
+</body>
+</html>
