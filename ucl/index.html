@@ -5,6 +5,8 @@
 </head>
 <body>
     <div id="draw"></div>
+    <button onclick="displayDraw()">Perform Draw</button>
+
     <script type="text/javascript">
         // Define the team names and countries for each chapeau
         var chapeau1 = [            ['Real Madrid', 'Spain'],
@@ -48,32 +50,68 @@
         ];
 
         // Perform the draw
-        var groups = [];
-        for (var i = 0; i < chapeau1.length; i++) {
-            for (var j = 0; j < chapeau2.length; j++) {
-                if (chapeau1[i][1] != chapeau2[j][1]) {
-                    for (var k = 0; k < chapeau3.length; k++) {
-                        if (chapeau1[i][1] != chapeau3[k][1] && chapeau2[j][1] != chapeau3[k][1]) {
-                            for (var l = 0; l < chapeau4.length; l++) {
-                                if (chapeau1[i][1] != chapeau4[l][1] && chapeau2[j][1] != chapeau4[l][1] && chapeau3[k][1] != chapeau4[l][1]) {
-                                    groups.push([chapeau1[i][0], chapeau2[j][0], chapeau3[k][0], chapeau4[l][0]]);
-                                }
-                            }
+        function performDraw() {
+            var groups = [];
+            var usedTeams = [];
+
+            while (groups.length < 8) {
+                var group = [];
+
+                for (var i = 0; i < 4; i++) {
+                    var availableTeams = [];
+
+                    for (var j = 0; j < chapeau1.length; j++) {
+                        if (!usedTeams.includes(chapeau1[j][0]) && !group.includes(chapeau1[j][0])) {
+                            availableTeams.push(chapeau1[j][0]);
                         }
                     }
-                }
+
+                    for (var j = 0; j < chapeau2.length; j++) {
+                        if (!usedTeams.includes(chapeau2[j][0]) && !group.includes(chapeau2[j][0])) {
+                            availableTeams.push(chapeau2[j][0]);
+                        }
+                    }
+
+                    for (var j = 0; j < chapeau3.length; j++) {
+                        if (!usedTeams.includes(chapeau3[j][0]) && !group.includes(chapeau3[j][0])) {
+                            availableTeams.push(chapeau3[j][0]);
+                        }
+                    }
+
+                    for (var j = 0; j < chapeau4.length; j++) {
+                        if (!usedTeams.includes(chapeau4[j][0]) && !group.includes(chapeau4[j][0])) {
+                            availableTeams.push(chapeau4[j][0]);
+                        }
+                    }
+
+                    var randomIndex = Math.floor(Math.random() * availableTeams.length);
+                    var selectedTeam = availableTeams[randomIndex];
+                    usedTeams.push(selectedTeam);
+                    group.push(selectedTeam);
+                                }
+
+            groups.push(group);
+        }
+
+        return groups;
+    }
+
+    // Display the draw
+    function displayDraw() {
+        var drawDiv = document.getElementById('draw');
+        var groups = performDraw();
+        var drawHTML = '';
+
+        for (var i = 0; i < groups.length; i++) {
+            drawHTML += '<h2>Group ' + String.fromCharCode(65 + i) + '</h2>';
+
+            for (var j = 0; j < groups[i].length; j++) {
+                drawHTML += '<p>' + groups[i][j] + '</p>';
             }
         }
 
-        // Display the results
-        var draw = document.getElementById('draw');
-        draw.innerHTML = '<h1>Champions League Draw</h1>';
-        for (var i = 0; i < groups.length; i++) {
-            draw.innerHTML += '<h2>Group ' + (i+1) + '</h2>';
-            for (var j = 0; j < groups[i].length; j++) {
-                draw.innerHTML += '<p>' + groups[i][j] + '</p>';
-            }
-        }
-    </script>
+        drawDiv.innerHTML = drawHTML;
+    }
+</script>
 </body>
 </html>
