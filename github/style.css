@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styles */
+
+body {
+  background-color: #F9F9F9;
+  color: #1f2530;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  line-height: 1.6;
+}
+
+/* Form Styles */
+
+.user-form {
+  width: 100%;
+  max-width: 700px;
+}
+
+.user-form input {
+  width: 100%;
+  display: block;
+  background-color: #fff;
+    border: 2px solid #5487c8;
+  border-radius: 10px;
+  color: #1f2530;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  font-family: inherit;
+  font-size: 1rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.user-form input::placeholder {
+  color: #bbb;
+}
+
+.user-form input:focus {
+  outline: none;
+}
+
+/* User Profile Card Styles */
+
+.card {
+  max-width: 880px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  padding: 3rem;
+  margin: 0 1.5rem;
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 10px solid #f9f9f9;
+}
+
+.user-info {
+  color: #1f2530;
+  margin-left: 2rem;
+}
+
+.user-info h2 {
+  margin-bottom: 1rem;
+}
+
+.user-info p {
+  margin-bottom: 1rem;
+}
+
+.user-info ul {
+  margin-bottom: 1rem;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.user-info ul li {
+  display: flex;
+  align-items: center;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.user-info ul li strong {
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+}
+
+.repo {
+  text-decoration: none;
+  color: #fff;
+  background-color: #5487c8;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.25rem 0.5rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+.repo:hover {
+  background-color: #36628d;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 550px) {
+  * {
+    overflow-x: hidden;
+  }
+
+  body {
+    padding: 15px;
+  }
+
+  .card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .user-form {
+    max-width: 400px;
+  }
+}
