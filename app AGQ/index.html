@@ -1,15 +1,104 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Application walid</title>
+    <style>
+        /* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+main {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.input-container {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.result-container {
+    margin-top: 20px;
+}
+
+h3 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+    </style>
+    <script src="script.js"></script>
+</head>
+<body>
     <header>
-        <script src="script.js"></script>
-<title>Application walid</title>
+        <h1>Application de Gestion de Stock réalisé par Walid Benkhal</h1>
     </header>
-    <body>
-<h1>application de gestion de stock réalisé par walid benkhal</h1>
-<h3>donner la valeure de S</h3><input id="s">
-<h3>donner la valeure de D</h3><input id="d">
-<h3>donner la valeure de H</h3><input id="h">
-<button type="button" onclick="calculer()">calcul de Q* et N</button>
-<h3>lot économique Q* est :</h3><input id="q">
-<h3>le nombre de commande optimal est :</h3><input id="n">
-    </body>
+    <main>
+        <div class="input-container">
+            <label for="s">Donner la valeur de S</label>
+            <input id="s" type="number">
+        </div>
+        <div class="input-container">
+            <label for="d">Donner la valeur de D</label>
+            <input id="d" type="number">
+        </div>
+        <div class="input-container">
+            <label for="h">Donner la valeur de H</label>
+            <input id="h" type="number">
+        </div>
+        <button type="button" onclick="calculer()">Calcul de Q* et N</button>
+        <div class="result-container">
+            <h3>Lot économique Q* est :</h3>
+            <input id="q" readonly>
+            <h3>Le nombre de commande optimal est :</h3>
+            <input id="n" readonly>
+        </div>
+    </main>
+</body>
 </html>
